@@ -1,0 +1,11 @@
+.banner {
+    background-color: #0055a5;
+    /* Blue background */
+    color: white;
+    /* White text */
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    
+}

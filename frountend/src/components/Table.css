@@ -1,0 +1,50 @@
+/* Styles for the data table */
+.table-container {
+    background-color: #003366;
+    /* Dark blue background */
+    color: white;
+    /* White text */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding around the table */
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+}
+
+.table-container th,
+.table-container td {
+    border: 1px solid rgb(0, 0, 0);
+    /* White borders */
+    padding: 10px;
+}
+
+.table-container th {
+    background-color: #145ba2;
+    /* Slightly darker blue for the header */
+    color: white;
+    
+}
+
+.table-container td {
+    background-color: #ffffff;
+    /* Dark blue for the table cells */
+
+    
+}
+
+
+
+.table-container tr:nth-child(even) td {
+     background-color: #ffffff;
+    /* Alternate row color */
+    
+
+}
+
+

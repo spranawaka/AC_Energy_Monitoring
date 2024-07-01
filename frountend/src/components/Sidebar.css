@@ -1,0 +1,43 @@
+/* Sidebar styles */
+.sidebar {
+    background-color: #003366;
+    /* Dark blue background */
+    color: white;
+    /* White text */
+    width: 250px;
+    /* Fixed width */
+    height: 160vh;
+    /* Full viewport height */
+    padding: 20px;
+    /* Padding around the content */
+    
+}
+
+.sidebar img {
+    max-width: 100%;
+    border-radius: 10px;
+    /* Optional: rounded corners for the logo */
+    margin-bottom: 20px;
+    /* Space below the logo */
+}
+
+.sidebar .nav-link {
+    color: white;
+    /* White text for the links */
+    margin-bottom: 10px;
+    /* Space between the links */
+}
+
+.sidebar .nav-link.active {
+    background-color: #0055a5;
+    /* Slightly lighter blue for the active link */
+    border-radius: 5px;
+    /* Rounded corners for the active link */
+}
+
+.sidebar .nav-link:hover {
+    background-color: #0055a5;
+    /* Slightly lighter blue on hover */
+    border-radius: 5px;
+    /* Rounded corners on hover */
+}

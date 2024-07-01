@@ -1,0 +1,36 @@
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.container-fluid {
+  display: flex;
+  height: 100vh;
+  padding: 0;
+}
+
+.row {
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar {
+  min-height: 100%;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.navbar {
+  margin-bottom: 1rem;
+}
+
+.p-3 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  padding-top: 0% !important;
+
+}
