@@ -36,7 +36,7 @@ const DataChart = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/data/all');
+        const response = await axios.get('http://124.43.179.18:3003/data/all');
         const data = response.data;
 
         if (data && data.length > 0) {

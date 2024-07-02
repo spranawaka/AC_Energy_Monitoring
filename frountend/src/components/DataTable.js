@@ -10,7 +10,7 @@ const DataTable = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/data/all');
+        const response = await axios.get('http://124.43.179.18:3003/data/all');
         setData(response.data.reverse()); // Reverse the data so the latest is first
       } catch (error) {
         console.error('Error fetching data', error);

@@ -6,7 +6,7 @@ const path = require('path');
 
 
 const app = express();
-const port = 3000; // Change to your desired port
+const port = 3003; // Change to your desired port
 const mongoUrl = 'mongodb+srv://spranawaka98:sp1234@power.bfkm0fz.mongodb.net/Ac-Power-moniter?retryWrites=true&w=majority&appName=power'; // Change to your MongoDB connection string
 const dbName = 'energyMonitoring';
 const collectionName = 'measurements';

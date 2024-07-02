@@ -10,7 +10,7 @@ const DataDisplay = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/data'); // Update this URL if necessary
+        const response = await axios.get('http://124.43.179.18:3003/data'); // Update this URL if necessary
         setData(response.data[0]);
       } catch (error) {
         console.error('Error fetching data', error);
