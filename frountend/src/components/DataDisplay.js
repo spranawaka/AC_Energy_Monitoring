@@ -3,7 +3,6 @@ import axios from 'axios';
 import GaugeDisplay from './GaugeDisplay';
 import DataChart from './DataChart';
 
-
 const DataDisplay = () => {
   const [data, setData] = useState(null);
 
@@ -17,10 +16,13 @@ const DataDisplay = () => {
       }
     };
 
-    const intervalId = setInterval(fetchData, 1000);
+    fetchData(); // Initial fetch
+    const intervalId = setInterval(fetchData, 100); // Fetch data every 10 seconds
 
-    return () => clearInterval(intervalId);
+    return () => clearInterval(intervalId); // Clean up interval on component unmount
   }, []);
+
+  console.log(`Rendering  gauge`);
 
   if (!data) {
     return <div>Loading...</div>;
@@ -28,8 +30,8 @@ const DataDisplay = () => {
 
   return (
     <div>
-      <br></br>
-      <br></br>
+      <br />
+      <br />
       <div className="row">
         <div className="col-md-6 col-lg-3 col-12">
           <GaugeDisplay title="Amps" value={data.amperes} min={0} max={100} />
@@ -38,18 +40,16 @@ const DataDisplay = () => {
           <GaugeDisplay title="Voltage" value={data.voltage} min={0} max={250} />
         </div>
         <div className="col-md-6 col-lg-3 col-12">
-          <GaugeDisplay title="Power" value={data.power} min={0} max={1000} />
+          <GaugeDisplay title="Power" value={data.power} min={0} max={2000} />
         </div>
         <div className="col-md-6 col-lg-3 col-12">
-          <GaugeDisplay title="Energy" value={data.energy} min={0} max={100} />
+          <GaugeDisplay title="Energy" value={data.energy} min={0} max={1000} />
         </div>
       </div>
-      <br></br>
-       <DataChart />
+      <br />
+      <DataChart />
     </div>
   );
 };
 
 export default DataDisplay;
-
-
